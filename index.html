@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Guru</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>  
 </head>
-<body>
+<body class="bg-cyan-100">
+    <main class="mx-auto">
+        <h1 class="text-center text-cyan-500 font-bold mt-8 text-7xl">Currency Guru</h1>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mt-16 auto-cols-auto">
+            <div>
+                <img class="lg:pl-12 h-full" src="images/money.jpg" alt="">
+            </div>
+            <div class="text-center p-auto">
+                <h3 class="text-4xl font-semibold py-3">Income</h3>
+                <p class="text-2xl font-medium">income: <input class="rounded h-12"  type="text" name="" placeholder="Your Total Income" id=""></p>
+                <h3 class="text-4xl font-semibold py-3">Expenses</h3>
+                <p class="text-2xl font-medium py-2">Food:<input class="rounded h-12" placeholder="Foods Cost" type="text" name="" id=""></p>
+                <p class="text-2xl font-medium py-2">Rent:<input class="rounded h-12" placeholder="Rent Cost" type="text" name="" id=""></p>
+                <p class="text-2xl font-medium py-2">Clothes:<input class="rounded h-12" placeholder="Clothes Cost" type="text" name="" id=""></p>
+                <button class="text-4xl font-semibold py-4 my-3 bg-emerald-600 rounded-md px-5 text-white hover:bg-sky-700">Calculate</button>
+                <p class="text-4xl font-semibold py-3">Total Expenses: 5500 </p>
+                <p class="text-4xl font-semibold py-3">Balance: 4500</p>
+                <p class="text-2xl font-medium">Save: <input class="rounded w-28 h-12" type="text" name="" id="">  % <button class="text-4xl px-5 hover:bg-sky-700 text-white py-1 ml-4 font-semibold bg-emerald-600 rounded-md">Save</button></p>
+                <p class="text-4xl font-semibold py-3">Saving Amount: 2000 </p>
+                <p class="text-4xl font-semibold py-3">Remaining Balance: 2500 </p>
+            </div>
+        </div>
+    </main>
     
 
 
