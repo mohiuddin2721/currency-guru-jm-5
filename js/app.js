@@ -16,6 +16,12 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     totalBalance.innerText = incomeInput - totalExpenses.innerText;
 });
 
-document.getElementById('').addEventListener('click', function () {
-    
+document.getElementById('save-btn').addEventListener('click', function () {
+    const savingsPercentInput = amountCost('savings-percent-input');
+    const incomeInputForSavingCount = amountCost('income-input');
+    const savingsAmount = document.getElementById('savings-amount');
+    const remainingBalance = document.getElementById('remaining-balance');
+    const totalBalanceForSavingCount = document.getElementById('total-balance');
+    savingsAmount.innerText = incomeInputForSavingCount * savingsPercentInput / 100;
+    remainingBalance.innerText = totalBalanceForSavingCount.innerText - savingsAmount.innerText;
 });
