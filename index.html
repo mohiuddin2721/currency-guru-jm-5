@@ -16,17 +16,17 @@
             </div>
             <div class="text-center p-auto">
                 <h3 class="text-4xl font-semibold py-3">Income</h3>
-                <p class="text-2xl font-medium">income: <input class="rounded h-12"  type="text" name="" placeholder="Your Total Income" id=""></p>
+                <p class="text-2xl font-medium">income: <input id="income-input" class="rounded h-12 bg-slate-100"  type="text" name="" placeholder="Your Total Income" id=""></p>
                 <h3 class="text-4xl font-semibold py-3">Expenses</h3>
-                <p class="text-2xl font-medium py-2">Food:<input class="rounded h-12" placeholder="Foods Cost" type="text" name="" id=""></p>
-                <p class="text-2xl font-medium py-2">Rent:<input class="rounded h-12" placeholder="Rent Cost" type="text" name="" id=""></p>
-                <p class="text-2xl font-medium py-2">Clothes:<input class="rounded h-12" placeholder="Clothes Cost" type="text" name="" id=""></p>
-                <button class="text-4xl font-semibold py-4 my-3 bg-emerald-600 rounded-md px-5 text-white hover:bg-sky-700">Calculate</button>
-                <p class="text-4xl font-semibold py-3">Total Expenses: 5500 </p>
-                <p class="text-4xl font-semibold py-3">Balance: 4500</p>
-                <p class="text-2xl font-medium">Save: <input class="rounded w-28 h-12" type="text" name="" id="">  % <button class="text-4xl px-5 hover:bg-sky-700 text-white py-1 ml-4 font-semibold bg-emerald-600 rounded-md">Save</button></p>
-                <p class="text-4xl font-semibold py-3">Saving Amount: 2000 </p>
-                <p class="text-4xl font-semibold py-3">Remaining Balance: 2500 </p>
+                <p class="text-2xl font-medium py-2">Food:<input id="food-cost-input" class="rounded h-12 bg-slate-100" placeholder="Foods Cost" type="text" name="" id=""></p>
+                <p class="text-2xl font-medium py-2">Rent:<input id="rent-cost-input" class="rounded h-12 bg-slate-100" placeholder="Rent Cost" type="text" name="" id=""></p>
+                <p class="text-2xl font-medium py-2">Clothes:<input id="cloth-cost-input" class="rounded h-12 bg-slate-100" placeholder="Clothes Cost" type="text" name="" id=""></p>
+                <button id="calculate-btn" class="text-4xl font-semibold py-4 my-3 bg-emerald-600 rounded-md px-5 text-white hover:bg-sky-700">Calculate</button>
+                <p class="text-4xl font-semibold py-3">Total Expenses: <span id="total-expenses">00</span></p>
+                <p class="text-4xl font-semibold py-3">Balance: <span id="total-balance">00</span></p>
+                <p class="text-2xl font-medium">Save: <input id="save-percent" class="rounded w-28 h-12 bg-slate-100" placeholder="Savings" type="text" name="" id="">  % <button class="text-4xl px-5 hover:bg-sky-700 text-white py-1 ml-4 font-semibold bg-emerald-600 rounded-md">Save</button></p>
+                <p class="text-4xl font-semibold py-3">savings Amount: <span id="savings-amount">2000</span></p>
+                <p class="text-4xl font-semibold py-3">Remaining Balance: <span id="remaining-balance">2500</span></p>
             </div>
         </div>
     </main>
