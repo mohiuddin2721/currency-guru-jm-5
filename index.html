@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Guru</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>  
 </head>
 <body class="bg-cyan-100">
@@ -16,17 +17,24 @@
             </div>
             <div class="text-center p-auto">
                 <h3 class="text-4xl font-semibold py-3">Income</h3>
-                <p class="text-2xl font-medium">income: <input id="income-input" class="rounded h-12 bg-slate-100"  type="text" name="" placeholder="Your Total Income" id=""></p>
+                <p id="error-message" class="message text-xl">Error! Only positive number are allowed</p>
+                <p id="error-more-income" class="message text-xl">Error! Need more Income</p>
+                
+                <p class="text-2xl font-medium">income: <input id="income-input" class="rounded h-12 bg-slate-100"  type="text" value="0" placeholder="Your Total Income"></p>
                 <h3 class="text-4xl font-semibold py-3">Expenses</h3>
-                <p class="text-2xl font-medium py-2">Food:<input id="food-cost-input" class="rounded h-12 bg-slate-100" placeholder="Foods Cost" type="text" name="" id=""></p>
-                <p class="text-2xl font-medium py-2">Rent:<input id="rent-cost-input" class="rounded h-12 bg-slate-100" placeholder="Rent Cost" type="text" name="" id=""></p>
-                <p class="text-2xl font-medium py-2">Clothes:<input id="cloth-cost-input" class="rounded h-12 bg-slate-100" placeholder="Clothes Cost" type="text" name="" id=""></p>
+                <p class="text-2xl font-medium py-2">Food:<input id="food-cost-input" class="rounded h-12 bg-slate-100" placeholder="Foods Cost" type="text" value="0"></p>
+                
+                <p class="text-2xl font-medium py-2">Rent:<input id="rent-cost-input" class="rounded h-12 bg-slate-100" placeholder="Rent Cost" type="text" value="0"></p>
+                
+                <p class="text-2xl font-medium py-2">Clothes:<input id="cloth-cost-input" class="rounded h-12 bg-slate-100" placeholder="Clothes Cost" type="text" value="0"></p>
+                <p id="food-error" class="message text-xl">Error! allow only positive number</p>
                 <button id="calculate-btn" class="text-4xl font-semibold py-4 my-3 bg-emerald-600 rounded-md px-5 text-white hover:bg-sky-700">Calculate</button>
                 <p class="text-4xl font-semibold py-3">Total Expenses: <span id="total-expenses">00</span></p>
                 <p class="text-4xl font-semibold py-3">Balance: <span id="total-balance">00</span></p>
-                <p class="text-2xl font-medium">Save: <input id="savings-percent-input" class="rounded w-28 h-12 bg-slate-100" placeholder="Savings" type="text" name="" id="">  % <button id="save-btn" class="text-4xl px-5 hover:bg-sky-700 text-white py-1 ml-4 font-semibold bg-emerald-600 rounded-md">Save</button></p>
-                <p class="text-4xl font-semibold py-3">savings Amount: <span id="savings-amount">2000</span></p>
-                <p class="text-4xl font-semibold py-3">Remaining Balance: <span id="remaining-balance">2500</span></p>
+                <p class="text-2xl font-medium">Save: <input id="savings-percent-input" class="rounded w-28 h-12 bg-slate-100" placeholder="Savings" type="text" value="0">  % <button id="save-btn" class="text-4xl px-5 hover:bg-sky-700 text-white py-1 ml-4 font-semibold bg-emerald-600 rounded-md">Save</button></p>
+                <p id="saving-error" class="message text-xl">Can not save more then 60%</p>
+                <p class="text-4xl font-semibold py-3">savings Amount: <span id="savings-amount">00</span></p>
+                <p class="text-4xl font-semibold py-3">Remaining Balance: <span id="remaining-balance">00</span></p>
             </div>
         </div>
     </main>
