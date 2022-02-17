@@ -64,6 +64,9 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const savingsAmount = document.getElementById('savings-amount');
     const remainingBalance = document.getElementById('remaining-balance');
     const totalBalanceForSavingCount = document.getElementById('total-balance');
+    const savingError = document.getElementById('saving-error');
     savingsAmount.innerText = incomeInputForSavingCount * savingsPercentInput / 100;
+    
     remainingBalance.innerText = totalBalanceForSavingCount.innerText - savingsAmount.innerText;
+    
 });
